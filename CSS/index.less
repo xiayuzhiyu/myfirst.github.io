@@ -1,0 +1,254 @@
+body {
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #f2f4f7;
+    // height: 1200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+// 当屏幕大于750px时字体大小就不再变化了
+@media screen and(min-width:750px) {
+    html {
+        // 这里js分成了20份
+        font-size: 37.5px !important;
+    }
+}
+
+.wrap {
+    background-color: #fff;
+    padding-bottom: 1.1467rem;
+}
+
+.header {
+    height: 2.1333rem;
+    text-align: center;
+    line-height: 2.13333rem;
+    border: 1px solid #eaeaea;
+    font-size: .9333rem;
+    color: #1c1c1c;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 0 1.6rem 0;
+}
+
+.nav .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+}
+
+.nav .items:nth-child(-n+3) {
+    margin-bottom: 1.6533rem;
+}
+
+.items img {
+    width: 3.7067rem;
+    height: 3.7067rem;
+}
+
+.items span {
+    font-size: .6667rem;
+    color: #707070;
+}
+
+.go {
+    margin: 0 0 .48rem 0 .48rem;
+    width: 100%;
+}
+
+.go img {
+    width: 100%;
+}
+
+.content {
+    padding: 1.0667rem .64rem;
+    background-color: #fff;
+    margin-top: .2667rem;
+}
+
+.content .con-hd {
+    display: flex;
+    align-items: center;
+    height: 1.0133rem;
+    justify-content: space-between;
+    margin-bottom: .9333rem;
+}
+
+.con-hd h4 {
+    margin: 0;
+    font-size: .7467rem;
+    color: #333333;
+}
+
+.con-hd .icon {
+    display: inline-block;
+    width: .9333rem;
+    height: .9333rem;
+    vertical-align: middle;
+    transform: translateY(-0.0267rem);
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.con-hd .more {
+    font-size: .5867rem;
+    color: #999999;
+}
+
+.get_job_focus {
+    position: relative;
+
+    .swiper-container {
+        height: 100%;
+        width: 14.4rem;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: .5;
+    }
+
+    // 中间当前展示的盒子
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+.swiper-slide a {
+    width: 9.0133rem;
+    height: 10.0267rem;
+}
+
+.swiper-slide a img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide p {
+    width: 9.0133rem;
+    font-size: .6667rem;
+    margin-top: .64rem;
+    color: #333;
+}
+
+.study {
+    .study_fo {
+        padding: .2667rem;
+    }
+
+    .swiper-slide {
+        // text-align: center;
+        text-align: left;
+        font-size: 18px;
+        background-color: #fff;
+        width: 7.7333rem !important;
+        height: 9.0667rem;
+        // background-color: pink;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        border-radius: .2667rem;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        // -webkit-box-pack: center;
+        // -ms-flex-pack: center;
+        // -webkit-justify-content: center;
+        // justify-content: center;
+        // -webkit-box-align: center;
+        // -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+        h5 {
+            font-size: .6933rem;
+            margin: 0;
+            font-weight: 600;
+            padding: 0 .2667rem;
+        }
+
+        p {
+            font-size: .64rem;
+
+            span {
+                color: chocolate;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.chongdian {
+    margin-bottom: 2.6667rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 2.4rem;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    padding: 0.533333rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc
+}
+
+.footer a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+}
+
+.footer a img {
+    width: 1.04rem;
+    height: 1.0667rem;
+}
+
+.footer a p {
+    margin: 0;
+    font-size: .64rem;
+    color: #333;
+    margin-top: .4rem;
+}
